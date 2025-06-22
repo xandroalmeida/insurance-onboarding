@@ -12,6 +12,8 @@ public interface CustomerRepository {
 
     Optional<Customer> findById(Long id);
 
+    Optional<Customer> findByCpf(String cpf);
+
     void delete(Long id);
 
     boolean existsById(Long id);

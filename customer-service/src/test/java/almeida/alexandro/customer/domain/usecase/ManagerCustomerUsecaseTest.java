@@ -91,6 +91,7 @@ class ManagerCustomerUsecaseTest {
     void updateCustomer_whenExists_shouldUpdateAndSave() {
         Customer updatedInfo = Customer.builder()
                 .name("João Silva")
+                .cpf("xxx.xxx.xxx-xx")
                 .email("joao.silva@example.com")
                 .phoneNumber("555-9999")
                 .address("Rua C, 789")
@@ -110,6 +111,7 @@ class ManagerCustomerUsecaseTest {
 
         assertEquals(1L, toSave.getId());
         assertEquals("João Silva", toSave.getName());
+        assertEquals("xxx.xxx.xxx-xx", toSave.getCpf());
         assertEquals("joao.silva@example.com", toSave.getEmail());
         assertEquals("555-9999", toSave.getPhoneNumber());
         assertEquals("Rua C, 789", toSave.getAddress());

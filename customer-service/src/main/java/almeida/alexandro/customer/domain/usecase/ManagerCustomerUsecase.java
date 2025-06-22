@@ -27,12 +27,17 @@ public class ManagerCustomerUsecase {
         return customerRepository.findById(id);
     }
 
+    public Optional<Customer> getCustomerByCpf(String cpf) {
+        return customerRepository.findByCpf(cpf);
+    }
+
     public Optional<Customer> updateCustomer(Long id, Customer customer) {
         return customerRepository.findById(id)
                 .map(existing -> Customer.builder()
                         //Atualiza os campos conforme regras de negócio
                         .id(id)
                         .name(customer.getName())
+                        .cpf(customer.getCpf())
                         .email(customer.getEmail())
                         .phoneNumber(customer.getPhoneNumber())
                         .address(customer.getAddress())

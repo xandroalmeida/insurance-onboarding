@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/insurance
+    username: insurance
+    password: insurance
+  jpa:
+    hibernate:
+      ddl-auto: update    # Cria/atualiza o esquema automaticamente
+    show-sql: true        # Exibe as consultas SQL no log
+    properties:
+      hibernate:
+        format_sql: true   # Formata o SQL para melhor leitura
+app:
+  customer:
+    base-url: http://localhost:8081

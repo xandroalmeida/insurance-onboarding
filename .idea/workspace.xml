@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae97bd16-da56-4ce7-8110-0b836f9cc452" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/web/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/exceptions/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/model/InsurancePolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/model/InsuranceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/model/Premium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/repository/InsurancePolicyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/usecase/CalculatePremiumUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/usecase/ContractInsuranceUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/domain/usecase/SimulateInsuranceUsecase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/client/CustomerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/client/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/client/dto/CustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/entity/EntityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/entity/InsurancePolicyEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/mapper/InsurancePolicyDomainEntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/repository/InsurancePolicyJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/repository/InsurancePolicyRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/persistence/repository/RepositoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/services/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/controller/InsuranceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/dto/ContractRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/dto/InsurancePolicyContractResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/dto/SimulationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/dto/SimulationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/handler/CustomerNotFoundHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/handler/ValidationErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/domain/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/domain/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/domain/usecase/ManagerCustomerUsecase.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/domain/usecase/ManagerCustomerUsecase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/infrastructure/persistence/repository/CustomerJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/infrastructure/persistence/repository/CustomerJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/infrastructure/persistence/repository/CustomerRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/infrastructure/persistence/repository/CustomerRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/web/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/web/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/test/java/almeida/alexandro/customer/domain/usecase/ManagerCustomerUsecaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/test/java/almeida/alexandro/customer/domain/usecase/ManagerCustomerUsecaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/generated-sources/annotations/almeida/alexandro/customer/infrastructure/persistence/mapper/CustomerDomainEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/generated-sources/annotations/almeida/alexandro/customer/infrastructure/persistence/mapper/CustomerDomainEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insurance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/insurance-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ys6QuD37EsddayTvbg9wTe2uuX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CustomerServiceApplication.executor": "Debug",
+    "Application.InsuranceServiceApplication.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/xandr/Projetos/NTT/insurance-onboarding/insurance-service/src/main/java/almeida/alexandro/insurance/web",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xandr\Projetos\NTT\insurance-onboarding\insurance-service\src\main\java\almeida\alexandro\insurance\web" />
+      <recent name="C:\Users\xandr\Projetos\NTT\insurance-onboarding\insurance-service\src\main\java\almeida\alexandro\insurance\infrastructure\persistence\repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="almeida.alexandro.customer.web" />
+      <recent name="almeida.alexandro.insurance.web.handler" />
+      <recent name="almeida.alexandro.insurance.domain.usecase" />
+      <recent name="almeida.alexandro.insurance.infrastructure.persistence.repository" />
+      <recent name="almeida.alexandro.insurance.domain.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="almeida.alexandro.customer.application.CustomerServiceApplication" />
+      <module name="customer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="almeida.alexandro.customer.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsuranceServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="almeida.alexandro.insurance.application.InsuranceServiceApplication" />
+      <module name="insurance-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="almeida.alexandro.insurance.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.InsuranceServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae97bd16-da56-4ce7-8110-0b836f9cc452" name="Changes" comment="" />
+      <created>1750610922554</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750610922554</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-service/src/main/java/almeida/alexandro/customer/web/controller/CustomerController.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

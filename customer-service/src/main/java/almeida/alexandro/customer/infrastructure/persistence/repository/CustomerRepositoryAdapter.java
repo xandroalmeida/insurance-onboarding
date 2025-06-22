@@ -36,6 +36,12 @@ public class CustomerRepositoryAdapter implements CustomerRepository {
     }
 
     @Override
+    public Optional<Customer> findByCpf(String cpf) {
+        return customerJpaRepository.findByCpf(cpf)
+                .map(customerDomainEntityMapper::toDomain);
+    }
+
+    @Override
     public void delete(Long id) {
         customerJpaRepository.deleteById(id);
     }

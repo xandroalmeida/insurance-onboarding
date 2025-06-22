@@ -14,7 +14,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,7 +34,6 @@ public class CustomerController {
             @ApiResponse(responseCode = "404", description = "Cliente não encontrado")
     })
     @GetMapping()
-    @Transactional
     public ResponseEntity<List<CustomerResponse>> findAll() {
         final var response = managerCustomerUsecase.findAll().stream()
                 .map(CustomerResponse::fromDomain)
@@ -51,7 +49,6 @@ public class CustomerController {
             @ApiResponse(responseCode = "400", description = "Dados inválidos fornecidos")
     })
     @PostMapping
-    @Transactional
     public ResponseEntity<CustomerResponse> create(
             @Parameter(description = "Dados do cliente para criação", required = true)
             @Valid @RequestBody CustomerRequest request) {
@@ -67,11 +64,25 @@ public class CustomerController {
             @ApiResponse(responseCode = "404", description = "Cliente não encontrado")
     })
     @GetMapping("/{id}")
-    @Transactional
     public ResponseEntity<CustomerResponse> getById(
             @Parameter(description = "ID do cliente", example = "1", required = true)
-            @PathVariable Long id) {
+            @PathVariable("id") Long id) {
         final var response = managerCustomerUsecase.getCustomerById(id).map(CustomerResponse::fromDomain);
+        return ResponseEntity.of(response);
+    }
+
+    @Operation(summary = "Busca cliente por CPF", description = "Retorna os dados de um cliente conforme seu CPF")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Cliente encontrado",
+                    content = @Content(mediaType = "application/json",
+                            schema = @Schema(implementation = CustomerResponse.class))),
+            @ApiResponse(responseCode = "404", description = "Cliente não encontrado")
+    })
+    @GetMapping("/cpf/{cpf}")
+    public ResponseEntity<CustomerResponse> getByCpf(
+            @Parameter(description = "CPF do cliente", example = "234.543.874-98", required = true)
+            @PathVariable("cpf") String cpf) {
+        final var response = managerCustomerUsecase.getCustomerByCpf(cpf).map(CustomerResponse::fromDomain);
         return ResponseEntity.of(response);
     }
 
@@ -84,10 +95,9 @@ public class CustomerController {
             @ApiResponse(responseCode = "404", description = "Cliente não encontrado")
     })
     @PutMapping("/{id}")
-    @Transactional
     public ResponseEntity<CustomerResponse> update(
             @Parameter(description = "ID do cliente a ser atualizado", required = true)
-            @PathVariable Long id,
+            @PathVariable("id") Long id,
             @Parameter(description = "Dados para atualização do cliente", required = true)
             @Valid @RequestBody CustomerRequest request) {
         return ResponseEntity.of(managerCustomerUsecase.updateCustomer(id, request.toDomain())
@@ -100,10 +110,9 @@ public class CustomerController {
             @ApiResponse(responseCode = "404", description = "Cliente não encontrado")
     })
     @DeleteMapping("/{id}")
-    @Transactional
     public ResponseEntity<Void> delete(
             @Parameter(description = "ID do cliente a ser deletado", example = "1", required = true)
-            @PathVariable Long id) {
+            @PathVariable("id") Long id) {
         managerCustomerUsecase.deleteCustomer(id);
         return ResponseEntity.noContent().build();
     }
