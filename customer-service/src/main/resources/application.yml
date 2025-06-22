@@ -1,0 +1,13 @@
+spring:
+  port: 8081
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: customer
+    password: customer
+  jpa:
+    hibernate:
+      ddl-auto: update    # Cria/atualiza o esquema automaticamente
+    show-sql: true        # Exibe as consultas SQL no log
+    properties:
+      hibernate:
+        format_sql: true   # Formata o SQL para melhor leitura
