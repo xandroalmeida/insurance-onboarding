@@ -24,7 +24,10 @@ public class CustomerServiceImpl implements CustomerService {
 
     public boolean customerFallback(String cpf, Throwable ex) {
         log.severe("Fallback de buscarCliente para %s: %s".formatted(cpf, ex.toString()));
-        // retorno alternativo ou relança de exceção customizada
+        //Todo: implementar lógica de fallback
+        // Por agora retorna false para indicar que o cliente não existe
+        // Isso pode ser alterado para lançar uma exceção personalizada e informar isso no
+        // retorno da API
         return false;
     }
 }
