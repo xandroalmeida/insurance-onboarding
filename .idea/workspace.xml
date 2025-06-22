@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae97bd16-da56-4ce7-8110-0b836f9cc452" name="Changes" comment="Versão beta">
-      <change afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/controller/InsuranceControllerApiDoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/insurance-service/src/test/java/almeida/alexandro/insurance/domain/usecase/CalculatePremiumUsecaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/insurance-service/src/test/java/almeida/alexandro/insurance/domain/usecase/ContractInsuranceUsecaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/insurance-service/src/test/java/almeida/alexandro/insurance/domain/usecase/SimulateInsuranceUsecaseTest.java" afterDir="false" />
+    <list default="true" id="ae97bd16-da56-4ce7-8110-0b836f9cc452" name="Changes" comment="Teste Unitários">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insurance-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/target/generated-sources/annotations/almeida/alexandro/customer/infrastructure/persistence/mapper/CustomerDomainEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/target/generated-sources/annotations/almeida/alexandro/customer/infrastructure/persistence/mapper/CustomerDomainEntityMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/services/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/infrastructure/services/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/controller/InsuranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/insurance-service/src/main/java/almeida/alexandro/insurance/web/controller/InsuranceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insurance-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/insurance-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,7 @@
         <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -60,6 +64,7 @@
     "JUnit.ContractInsuranceUsecaseTest.executor": "Run",
     "JUnit.SimulateInsuranceUsecaseTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
@@ -196,12 +201,21 @@
       <option name="project" value="LOCAL" />
       <updated>1750625407632</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teste Unitários">
+      <option name="closed" value="true" />
+      <created>1750627303474</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750627303474</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Versão beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versão beta" />
+    <MESSAGE value="Teste Unitários" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste Unitários" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

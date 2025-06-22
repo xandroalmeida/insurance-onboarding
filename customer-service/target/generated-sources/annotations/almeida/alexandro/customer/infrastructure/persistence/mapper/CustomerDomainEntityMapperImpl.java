@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-06-22T13:59:45-0300",
-    comments = "version: 1.6.3, compiler: javac, environment: Java 24 (Oracle Corporation)"
+    date = "2025-06-22T18:50:34-0300",
+    comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.6 (Amazon.com Inc.)"
 )
 @Component
 public class CustomerDomainEntityMapperImpl implements CustomerDomainEntityMapper {
